@@ -2,7 +2,7 @@
 //that no two adjacent vertices of graph are coloured with same colour.
 bool isSafe(int node, int color[], bool graph[101][101], int n, int col) {
     for(int k = 0;k<n;k++) {
-        if(k != node && graph[k][node] == 1 && color[k] == col) {
+        if(k != node && graph[k][node] == 1 && color[k] == col) {// check for neighbour node and neoghbr have same clr
             return false; 
         }
     }
